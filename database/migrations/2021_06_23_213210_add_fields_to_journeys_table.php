@@ -19,6 +19,7 @@ class AddFieldsToJourneysTable extends Migration
             $table->longText('description');
             $table->tinyInteger('lenght_of_stay');
             $table->integer('price');
+            $table->string('kids_activities')->nullable();
         });
     }
 
@@ -35,6 +36,7 @@ class AddFieldsToJourneysTable extends Migration
             $table->dropColumn('description');
             $table->dropColumn('lenght_of_stay');
             $table->dropColumn('price');
+            $table->dropColumn('kids_activities');
         });
     }
 }
