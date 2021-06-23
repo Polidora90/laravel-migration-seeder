@@ -19,6 +19,8 @@ class CreateJourneysTable extends Migration
         });
     }
 
+    // timetsapms crea le col created_at e updated_at
+
     /**
      * Reverse the migrations.
      *
